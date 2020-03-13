@@ -1,0 +1,396 @@
+body{
+    margin:0;
+    /* background-color: #181818; */
+}
+nav{
+    position:fixed;
+    width:100%;
+    height:56px;
+    background-color:#272727;
+}
+.navwrap{
+    width:100%;
+    height:100%;
+    display: grid;
+    grid-template-columns:1fr minmax(0,8fr) 1.4fr;
+}
+.navleftwrap{
+    /* background-color: blue; */
+    height:100%;
+    min-width: 180px;
+    display:grid;
+    grid-template-columns: 40px 120px;
+}
+.burgerbutton{
+    width:40px;
+    height:100%;
+    /* background-color: blue; */
+    margin-left: 20px;
+    display:grid;
+    place-content: center center;
+}
+.fa-bars{
+    width:100%;
+    height:100%;
+    color:white;
+}
+.logo{
+    display:grid;
+    place-content:start center;
+    margin-left: 20px;
+    height:44px;
+    background-image: url("youtubelogo.png");
+    background-size: cover;
+}
+.searchbarwrap{
+    display: grid;
+    grid-template-columns: minmax(0,575px) 65px;
+    place-content: center center;
+    height:100%;
+}
+.writewrap{
+    padding-left:10px;
+    height:30px;
+    background-color: #121212;
+    border:none;
+    display:grid;
+    grid-template-columns: minmax(0,531px) minmax(0,34px);
+    align-content: center;
+}
+.write{
+    background-color: #121212;
+    border:none;
+    height:24px;
+}
+.keyboard{
+    height:24px;
+    display:grid;
+    place-content: center center;
+}
+.fa-keyboard{
+    color:white;
+}
+.searchbutton{
+    display:grid;
+    place-content: center center;
+    height:30px;
+    background-color:#383838;
+}
+.fa-search{
+    color:darkgray;
+    height:100%;
+    width:20px;
+
+}
+.navrightwrap{
+    min-width:270px;
+    display:grid;
+    grid-template-columns: 40px 40px 40px 40px;
+    place-content:center end;
+    padding-right: 20px;
+    height:100%;
+    float:right;
+}
+.makecontent, .app, .alarm{
+    /* margin:0 30px 0 30px; */
+    height:40px;
+    display:grid;
+    place-content: center center;
+}
+.fa-video, .fa-th, .fa-bell{
+    color:white;
+}
+.account{
+    display:grid;
+    height:40px;
+    border-radius: 50%;
+    background-color: #383838;
+    place-content:center center;
+    color:white;
+    
+}
+.navbottom{
+    width:100%;
+    height:56px;
+}
+.mainwrap{
+    display: grid;
+    width:100%;
+    height:100%;
+    grid-template-columns:0.75fr 5.3fr;
+}
+.sidebar{
+    position:fixed;
+    width:250px;
+    height:100vh;
+    background-color:#212121;
+    overflow-y: scroll;
+
+}
+.sidebarwrap{
+    width:100%;
+    height:100%;
+
+}
+.sidebar::-webkit-scrollbar {
+     height:10px; 
+     width:8px;
+    }
+.sidebar::-webkit-scrollbar-thumb { 
+    background: gray; 
+    width:8px;
+    height:100px;
+}
+.sidebar::-webkit-scrollbar-thumb:hover {
+     background: #404040; 
+    }
+.sidebar::-webkit-scrollbar-thumb:active {
+     background: #808080; 
+    }
+.sidebartopwrap{
+    padding-top:10px;
+    width:100%;
+    height:136px;
+    border-bottom: 1px solid #383838;
+} 
+.sidechannelwrap, .homewrap, .hotwrap, .subswrap, .lockerwrap, .watchrecordwrap, .myvideowrap, .afterlookvideowrap, .likevideowrap, .songwrap, .primiumwrap, .moviewrap, .gamewrap, .streamingwrap, .gearwrap, .declarewrap, .customerwrap, .opinionwrap{
+    display:grid;
+    grid-template-columns: 30% 70%;
+    grid-auto-rows: 40px;
+    place-content: center center;
+    width:100%;
+    height:40px;
+}
+.sidechannelwrap:hover, .homewrap:hover, .hotwrap:hover, .subswrap:hover, .lockerwrap:hover, .watchrecordwrap:hover, .myvideowrap:hover, .afterlookvideowrap:hover, .likevideowrap:hover, .songwrap:hover, .primiumwrap:hover, .moviewrap:hover, .gamewrap:hover, .streamingwrap:hover, .gearwrap:hover, .declarewrap:hover, .customerwrap:hover, .opinionwrap:hover{
+    background-color:#383838;
+    color:white;
+}
+.icon{
+    margin:0 10px 0 10px;
+    display:grid;
+    place-content: center center;
+}
+.fa-lg{
+    color:#909090;
+}
+.text{
+    padding-top: 11px;
+    font-size: 14px;
+    color:white;
+}
+.sidebarmiddlewrap{
+    padding-top:10px;
+    width:100%;
+    height:256px;
+    border-bottom: 1px solid #383838;
+}
+.subscribewrap{
+    width:100%;
+    height:336px;
+    border-bottom: 1px solid #383838;
+}
+.substext{
+    width:100%;
+    height:35px;
+    padding:10px 0 0 20px;
+    color:white;
+}
+.sidechannelwrap{
+    width:100%;
+    height:40px;
+    display:grid;
+    justify-content: center;
+    grid-template-columns: 30% 50% 10% 10%;
+    grid-auto-rows:40px;
+    /* background-color: tomato; */
+}
+.sidebarchannellogo{
+    display: grid;
+    place-content: center center;
+}
+.sidelogo{
+    width: 24px;
+    height: 24px;
+    background-image: url("js-logo.png");
+    background-size: cover;
+    border-radius: 50%;
+}
+.sidechannelname{
+    padding-top: 8px;
+    color:white;
+}
+.judgingstreaming{
+    display: grid;
+    place-content: center center;
+    /* background-color: yellow; */
+}
+.sidedot{
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background:red;
+}
+.morebutton{
+    display: grid;
+    place-content: center center;
+}
+.fa-chevron-down{
+ color:white;
+}
+.sidebarmorewrap{
+    width:100%;
+    height:216px;
+    /* background:skyblue; */
+    border-bottom: 0.5px solid #383838;
+}
+.moreyoutube{
+    margin-left: 20px;
+    width:100%;
+    height:40px;
+    padding-top:11px;
+    color:white;
+}
+.settingwrap{
+    width:100%;
+    height:176px;
+    border-bottom: 1px solid #383838;
+}
+.footerwrap{
+    width:100%;
+    height:300px;
+    /* background:#383838; */
+}
+.guidelinktop{
+    padding:20px;
+    width:100%;
+    height:25px;
+}
+.footerwrap *{
+    font-size: 13px;
+}
+.topwrap, .topbottomwrap{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    height:15px;
+    margin-bottom: 6px;
+}
+.topwrap *, .topbottomwrap *, .guidelinkbottom *, .bottomtopwrap{
+    margin-right:10px;
+    color:#909090;
+}
+.guidelinkbottom{
+    width:100%;
+    height:35px;
+    padding-left:20px;
+}
+.bottomtopwrap{
+    padding-top: 10px;
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(2,max-content);
+    height:15px;
+    margin-bottom: 5px;
+}
+.guidelinkbottom *{
+    padding-top:10px;
+}
+content{
+    width:100%;
+    background-color: #181818;
+}
+.videowrap{
+    width:100%;
+    position:static;
+    /* display:grid; */
+    /* grid-gap:15px; */
+    /* grid-auto-rows: 240px; */
+    /* grid-auto-columns: 360px;  */
+    /* 240 360 230 280  */
+    /* grid-template-columns:repeat(auto-fit, minmax(240px,360px));             */
+    /* grid-template-rows:repeat(auto-fit, minmax(230px,280px)); */
+    color:white;
+}
+.videowraptitle, .newvideotitle{
+    margin:36px 0 0 67.5px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 2.4rem;
+}
+.customvideowrap, .newvideowrap{
+    margin-left:67.5px;
+    padding:24px 24px 24px 0;
+    /* width:100%; */
+    height:100%;
+    display:grid;
+    grid-gap:15px;
+    grid-template-columns:repeat(auto-fit, minmax(240px,360px));            
+    color:white;
+
+} 
+.videocontent{
+    /* border:2px solid blue; */
+    height:280px;
+    min-height: 230px;
+    /* background-color: slategray; */
+}
+.video{
+    width:100%;
+    height:66%;
+    background-image:url("thumbnail.jpg");
+    background-size : cover;
+
+}
+.explainwrap{ 
+    margin-top: 14px;
+    display: grid;
+    justify-content: start;
+    grid-gap:8px 8px;
+    grid-template-columns: 36px 5.5fr;
+    width:100%;
+    height:30%;
+    /* background-color: white; */
+}
+.channelicon{
+    height:36px;
+    border-radius: 50%;
+    background-image: url("js-logo.png");
+    background-size: cover;
+   
+}
+.infowrap{
+    display:grid;
+    grid-gap:4px 4px;
+    grid-template-columns:5fr 0.7fr;
+    grid-template-rows: 40px 20px 20px;
+}
+.videotitle{
+    min-width: 148px;
+    /* background-color: slateblue; */
+    height:40px;
+}
+.morefunction{
+    height:40px;
+    display:flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+.channeltitle{
+    width:100%;
+    /* background-color: green; */
+    height:20px;
+}
+.viewcount{
+    width:100%;
+    /* background-color:blue; */
+    grid-row: 3/4;;
+    height:20px;
+}
+@custom-media --md-size(max-width:700px);
+
+@media(--md-size){
+    .sidebar{
+        width:50px;
+    }
+
+}
