@@ -1,12 +1,13 @@
+
 body{
     margin:0;
-    /* background-color: #181818; */
 }
 nav{
     position:fixed;
     width:100%;
     height:56px;
     background-color:#272727;
+
 }
 .navwrap{
     width:100%;
@@ -15,7 +16,6 @@ nav{
     grid-template-columns:1fr minmax(0,8fr) 1.4fr;
 }
 .navleftwrap{
-    /* background-color: blue; */
     height:100%;
     min-width: 180px;
     display:grid;
@@ -24,7 +24,6 @@ nav{
 .burgerbutton{
     width:40px;
     height:100%;
-    /* background-color: blue; */
     margin-left: 20px;
     display:grid;
     place-content: center center;
@@ -92,7 +91,6 @@ nav{
     float:right;
 }
 .makecontent, .app, .alarm{
-    /* margin:0 30px 0 30px; */
     height:40px;
     display:grid;
     place-content: center center;
@@ -222,7 +220,6 @@ nav{
 .judgingstreaming{
     display: grid;
     place-content: center center;
-    /* background-color: yellow; */
 }
 .sidedot{
     height: 5px;
@@ -258,7 +255,6 @@ nav{
 .footerwrap{
     width:100%;
     height:300px;
-    /* background:#383838; */
 }
 .guidelinktop{
     padding:20px;
@@ -302,13 +298,6 @@ content{
 .videowrap{
     width:100%;
     position:static;
-    /* display:grid; */
-    /* grid-gap:15px; */
-    /* grid-auto-rows: 240px; */
-    /* grid-auto-columns: 360px;  */
-    /* 240 360 230 280  */
-    /* grid-template-columns:repeat(auto-fit, minmax(240px,360px));             */
-    /* grid-template-rows:repeat(auto-fit, minmax(230px,280px)); */
     color:white;
 }
 .videowraptitle, .newvideotitle{
@@ -329,10 +318,9 @@ content{
 
 } 
 .videocontent{
-    /* border:2px solid blue; */
     height:280px;
     min-height: 230px;
-    /* background-color: slategray; */
+    margin-bottom: 20px;
 }
 .video{
     width:100%;
@@ -349,7 +337,6 @@ content{
     grid-template-columns: 36px 5.5fr;
     width:100%;
     height:30%;
-    /* background-color: white; */
 }
 .channelicon{
     height:36px;
@@ -366,8 +353,7 @@ content{
 }
 .videotitle{
     min-width: 148px;
-    /* background-color: slateblue; */
-    height:40px;
+    height:25px;
 }
 .morefunction{
     height:40px;
@@ -377,20 +363,17 @@ content{
 }
 .channeltitle{
     width:100%;
-    /* background-color: green; */
     height:20px;
 }
 .viewcount{
     width:100%;
-    /* background-color:blue; */
     grid-row: 3/4;;
     height:20px;
 }
-@custom-media --md-size(max-width:700px);
 
-@media(--md-size){
+@media (--md-size){
     .sidebar{
-        width:50px;
+        display:none;
     }
 
 }
